@@ -12,6 +12,8 @@ export default function MainRoutes() {
         <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/profile/:id" element={<Profile />} />
+
+            <Route path="*" element={<h1>Not found =P</h1>} />
         </Routes>
     )
 }
