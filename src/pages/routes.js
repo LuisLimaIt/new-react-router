@@ -8,9 +8,10 @@ import Profile from './Profile';
 
 export default function MainRoutes() {
     return (
+        // Routes: Deve envolver todas as rotas, ele controla qual elemento será renderizado
         <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/profilenp" element={<Profile />} />
+            <Route path="/profile/:id" element={<Profile />} />
         </Routes>
     )
 }
