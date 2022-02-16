@@ -11,8 +11,8 @@ export default function Products() {
                 Products
                 <button onClick={() => navigate('/')}>Painel</button>
             </h1>
-
             <Outlet />
+
         </>
     )
 }
