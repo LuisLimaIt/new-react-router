@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, Outlet } from 'react-router';
+import { useNavigate, Outlet, Link } from 'react-router-dom';
 
 export default function Products() {
 
@@ -11,6 +11,10 @@ export default function Products() {
                 Products
                 <button onClick={() => navigate('/')}>Painel</button>
             </h1>
+            <h3>
+                <Link to="purchases">Compras</Link> <br />
+                <Link to="password">Altere sua senha</Link>
+            </h3>
             <Outlet />
 
         </>
